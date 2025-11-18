@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suhana Portfolio</title>
+    <title>Suhana | Aesthetic Portfolio</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
-<body>
+<body class="light">
+
+<!-- 🌙 THEME TOGGLE -->
+<div class="theme-toggle" onclick="toggleTheme()">
+    <i data-feather="moon"></i>
+</div>
 
 <header>
     <div class="container">
-        <h1>Hi, I'm <span class="name-highlight">Suhana</span> 👋</h1>
-        <p class="subtitle">Data Analysis Student • Aspiring Data Scientist • Developer</p>
+        <h1>Hi, I'm <span class="name-highlight">Suhana</span> 🌸</h1>
+        <p class="subtitle">Data Analysis Student  • Developer</p>
     </div>
 </header>
 
@@ -20,52 +28,52 @@
         <h2>About Me</h2>
         <p>
             Pre-final year student passionate about software development and data science.  
-            I enjoy leveraging programming, data analysis, and machine learning to develop  
-            impactful real-world solutions. With a growing interest in AI and analytics,  
-            I aim to build projects that help people and create meaningful insights.
+            I enjoy leveraging programming, data analysis, and machine learning to build  
+            meaningful real-world solutions. I love aesthetics, creativity, and solving  
+            problems using data-driven approaches.
         </p>
     </div>
 </section>
 
 <section id="projects">
     <div class="container">
-        <h2>My Projects</h2>
+        <h2>My Projects ✨</h2>
 
         <div class="project-card">
-            <h3>FitQuest – Fitness Tracking App</h3>
+            <h3>✨ FitQuest – Fitness Tracking App</h3>
             <p>
-                A mobile fitness application designed to motivate users and track their daily
-                fitness goals. It provides personalized workouts and helps users monitor progress.
+                A mobile fitness application that motivates users and tracks their daily
+                fitness goals with personalized workout plans.
             </p>
-            <p><strong>Technologies:</strong> Mobile App Development</p>
+            <p><strong>Tech:</strong> Mobile App Development</p>
         </div>
 
         <div class="project-card">
-            <h3>Budget Analysis using Data Science</h3>
+            <h3>💰 Budget Analysis using Data Science</h3>
             <p>
-                Analyzed user spending patterns using data science techniques to extract insights 
-                and help users make smarter financial decisions.
+                Analyzed spending patterns using data science techniques to generate
+                financial insights and help with smarter decision-making.
             </p>
-            <p><strong>Technologies:</strong> Python, Pandas, Matplotlib, Data Analysis</p>
+            <p><strong>Tech:</strong> Python, Pandas, Visualization</p>
         </div>
 
         <div class="project-card">
-            <h3>Brain Tumor Classification using Deep Learning (Ongoing)</h3>
+            <h3>🧠 Brain Tumor Classification (Ongoing)</h3>
             <p>
-                Implementing a CNN-based deep learning model for detecting and classifying 
-                brain tumors using medical image datasets.
+                Creating a CNN-based deep learning model for identifying and classifying
+                brain tumors from MRI images.
             </p>
-            <p><strong>Technologies:</strong> Python, TensorFlow/Keras, CNN, Image Processing</p>
+            <p><strong>Tech:</strong> Python, TensorFlow, CNN</p>
         </div>
 
         <div class="project-card">
-            <h3>Web Page Design</h3>
-            <p>A simple static website created using HTML and CSS.</p>
+            <h3>🌐 Web Page Design</h3>
+            <p>Static aesthetic web page created using HTML and CSS.</p>
         </div>
 
         <div class="project-card">
-            <h3>Calculator</h3>
-            <p>A basic JavaScript calculator with simple UI.</p>
+            <h3>🧮 Calculator</h3>
+            <p>Simple JavaScript calculator with aesthetic UI.</p>
         </div>
 
     </div>
@@ -73,15 +81,24 @@
 
 <section id="contact">
     <div class="container contact-box">
-        <h2>Contact</h2>
+        <h2>Contact 💌</h2>
         <p>Email: <strong>your-email@gmail.com</strong></p>
         <p>GitHub: <strong>github.com/suhana1701</strong></p>
     </div>
 </section>
 
 <footer>
-    <p>© 2025 Suhana | Portfolio</p>
+    <p>© 2025 Suhana • Made with 🌸 and Coffee ✨</p>
 </footer>
+
+<script>
+    feather.replace();
+
+    function toggleTheme() {
+        document.body.classList.toggle("dark");
+        document.body.classList.toggle("light");
+    }
+</script>
 
 </body>
 </html>
