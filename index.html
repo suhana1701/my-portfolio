@@ -6,7 +6,7 @@
     <title>Suhana | Aesthetic Portfolio</title>
     <link rel="stylesheet" href="style.css">
 
-    <!-- Icons -->
+    <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body class="light">
@@ -18,15 +18,18 @@
 
 <header>
     <div class="container">
+
+        <!-- Profile Section -->
         <div class="profile-container">
             <img src="your-photo.jpg" alt="Suhana" class="profile-pic">
         </div>
 
         <h1>Hi, I'm <span class="name-highlight">Suhana</span> 🌸</h1>
-        <p class="subtitle">Data Analysis Student • Developer</p>
+        <p class="subtitle">Data Analysis Student • Aspiring Data Scientist • Developer</p>
     </div>
 </header>
 
+<!-- ABOUT SECTION -->
 <section id="about">
     <div class="container about-box">
         <h2>About Me</h2>
@@ -39,45 +42,118 @@
     </div>
 </section>
 
+<!-- SKILLS SECTION -->
+<section id="skills">
+    <div class="container skills-box">
+        <h2>My Skills 💖</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <i data-feather="code"></i>
+                <p>Programming</p>
+            </div>
+
+            <div class="skill-card">
+                <i data-feather="bar-chart-2"></i>
+                <p>Data Analysis</p>
+            </div>
+
+            <div class="skill-card">
+                <i data-feather="database"></i>
+                <p>Machine Learning</p>
+            </div>
+
+            <div class="skill-card">
+                <i data-feather="smartphone"></i>
+                <p>App Development</p>
+            </div>
+
+            <div class="skill-card">
+                <i data-feather="pen-tool"></i>
+                <p>Web Design</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- TIMELINE SECTION -->
+<section id="timeline">
+    <div class="container timeline-box">
+        <h2>My Journey 🌸</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2023 – Present</h3>
+                    <p>Pre-final year student learning Data Science, ML, and Web Technologies.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2022</h3>
+                    <p>Started building projects like FitQuest, Budget Analysis & Web Apps.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2021</h3>
+                    <p>Began programming journey and learned HTML, CSS, and Python basics.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS SECTION -->
 <section id="projects">
     <div class="container">
         <h2>My Projects ✨</h2>
 
         <div class="project-card pink-card">
             <h3>✨ FitQuest – Fitness Tracking App</h3>
-            <p>Fitness app with personalized workouts & progress tracking.</p>
+            <p>Mobile fitness application that motivates users and tracks their daily goals.</p>
             <p><strong>Tech:</strong> Mobile App Development</p>
         </div>
 
         <div class="project-card blue-card">
             <h3>💰 Budget Analysis using Data Science</h3>
-            <p>Analyzed spending patterns & provided financial insights.</p>
+            <p>Analyzed spending patterns to generate financial insights.</p>
             <p><strong>Tech:</strong> Python, Pandas, Visualization</p>
         </div>
 
         <div class="project-card purple-card">
             <h3>🧠 Brain Tumor Classification</h3>
-            <p>CNN-based MRI tumor detection model (Ongoing).</p>
+            <p>CNN-based model detecting & classifying MRI tumors (ongoing).</p>
             <p><strong>Tech:</strong> Python, TensorFlow</p>
         </div>
 
         <div class="project-card green-card">
             <h3>🌐 Web Page Design</h3>
-            <p>Clean aesthetic static website.</p>
+            <p>Static website with aesthetic UI.</p>
         </div>
 
         <div class="project-card yellow-card">
             <h3>🧮 Calculator</h3>
-            <p>Simple JS calculator with cute UI.</p>
+            <p>Simple JavaScript calculator with cute UI.</p>
         </div>
 
     </div>
 </section>
 
+<!-- CONTACT SECTION -->
 <section id="contact">
     <div class="container contact-box">
         <h2>Contact 💌</h2>
-        <p>Email: <strong>suhana1705jain@gmail.com</strong></p>
+        <p>Email: <strong>your-email@gmail.com</strong></p>
         <p>GitHub: <strong>github.com/suhana1701</strong></p>
     </div>
 </section>
@@ -87,8 +163,10 @@
 </footer>
 
 <script>
+    /* ICONS */
     feather.replace();
 
+    /* DARK/LIGHT MODE */
     function toggleTheme() {
         document.body.classList.toggle("dark");
         document.body.classList.toggle("light");
