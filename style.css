@@ -12,13 +12,13 @@ body {
 
 /* LIGHT THEME */
 body.light {
-    background: #fff2fb;
+    background: #fff5f2; /* warm ivory */
     color: #333;
 }
 
 /* DARK THEME */
 body.dark {
-    background: #1a1722;
+    background: #1a1416;
     color: #eee;
 }
 
@@ -27,11 +27,11 @@ body.dark {
     position: fixed;
     top: 20px;
     right: 20px;
-    background: #ffb3c6;
+    background: #ffb3b8;
     padding: 12px;
     border-radius: 50%;
     cursor: pointer;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
     transition: 0.3s;
 }
 .theme-toggle:hover {
@@ -40,7 +40,7 @@ body.dark {
 
 /* HEADER */
 header {
-    background: linear-gradient(135deg, #ffafcc, #bde0fe, #cdb4db, #ffc8dd);
+    background: linear-gradient(135deg, #ff9aa2, #ffb7b2, #ffdac1, #ffe5d9);
     padding: 80px 0;
     text-align: center;
     border-bottom-left-radius: 40px;
@@ -59,7 +59,7 @@ header {
     height: 120px;
     border-radius: 50%;
     border: 4px solid #fff;
-    box-shadow: 0px 0px 25px #ffcdf1, 0px 0px 40px #ffc8dd;
+    box-shadow: 0px 0px 20px #ffc2c2, 0px 0px 35px #ffdad9;
     object-fit: cover;
     margin-bottom: 20px;
     transition: 0.3s;
@@ -69,7 +69,7 @@ header {
 }
 
 .name-highlight {
-    color: #ff8fab;
+    color: #ff8a8a;
     font-weight: bold;
 }
 
@@ -90,19 +90,20 @@ h2 {
     text-align: center;
     font-size: 32px;
     margin-bottom: 18px;
-    color: #d63384;
+    color: #d44f4f;  /* rose gold dark */
     letter-spacing: 1px;
 }
 
-/* ABOUT */
+/* ABOUT SECTION */
 .about-box {
-    background: #ffffffbb;
+    background: #fff1ed;
     padding: 30px;
     border-radius: 18px;
-    box-shadow: 0px 6px 18px rgba(0,0,0,0.1);
+    box-shadow: 0px 6px 18px rgba(255, 154, 162, 0.25);
     width: 90%;
     margin: auto;
     backdrop-filter: blur(10px);
+    border: 1px solid #ffd2c8;
 }
 
 /* PROJECT CARDS */
@@ -112,35 +113,38 @@ h2 {
     border-radius: 20px;
     width: 90%;
     color: #333;
-    box-shadow: 0px 6px 18px rgba(0,0,0,0.12);
+    box-shadow: 0px 6px 18px rgba(255, 154, 162, 0.2);
+    border: 1px solid #ffd6d1;
     transition: 0.3s;
 }
+
+/* CARD COLORS – Coral/Rose Aesthetic */
+.pink-card { background: #ffe5e0; }
+.blue-card { background: #ffe9e4; }
+.purple-card { background: #ffefe9; }
+.green-card { background: #fff2ed; }
+.yellow-card { background: #fff6f0; }
+
 .project-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.18);
+    box-shadow: 0px 10px 25px rgba(255, 154, 162, 0.35);
 }
-
-/* COLORFUL CARDS */
-.pink-card { background: #ffe5ec; }
-.blue-card { background: #e0f0ff; }
-.purple-card { background: #f3e8ff; }
-.green-card { background: #e8ffe9; }
-.yellow-card { background: #fff9d6; }
 
 /* CONTACT */
 .contact-box {
-    background: #fff0f6;
+    background: #ffe3dc;
     padding: 25px;
     border-radius: 18px;
     width: 85%;
     margin: auto;
-    box-shadow: 0px 6px 16px rgba(0,0,0,0.1);
+    border: 1px solid #ffc5b8;
+    box-shadow: 0px 6px 16px rgba(255, 154, 162, 0.2);
 }
 
 /* FOOTER */
 footer {
-    background: #ffb5e8;
-    color: #4d004d;
+    background: #ffb7b2;
+    color: #4d1919;
     text-align: center;
     padding: 18px;
     margin-top: 40px;
