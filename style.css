@@ -7,7 +7,7 @@
 }
 
 body.light {
-    background: #f5f7fa !important;
+    background: #f5f7fa !important; /* clean white-grey */
     color: #1f2d3d;
 }
 
@@ -39,7 +39,7 @@ body.dark {
 
 /* HEADER */
 header {
-    background: linear-gradient(135deg, #1f3b57, #244b6a, #2d5c85);
+    background: linear-gradient(135deg, #1f3b57, #244b6a, #2d5c85); /* blue gradient */
     color: white;
     text-align: center;
     padding: 80px 0;
@@ -48,7 +48,7 @@ header {
 }
 
 .highlight {
-    color: #cfe8ff;
+    color: #cfe8ff; /* light blue */
 }
 
 .subtitle {
@@ -140,8 +140,42 @@ header {
     color: #1f3b57;
 }
 
+/* CONTACT INFO */
+.contact-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
+    margin-top: 15px;
+}
+
+.contact-row p {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    gap: 8px;
+}
+
+.contact-row i {
+    width: 18px;
+    height: 18px;
+    color: #1f3b57;
+}
+
 /* FOOTER */
 footer {
     background: #1f3b57;
     color: white;
-    text-align: cente
+    text-align: center;
+    padding: 16px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    header h1 { font-size: 26px; }
+}
